@@ -24,7 +24,7 @@ function getRandomArray(numItems) {
 function getRandomDateArray(numItems) {
   // Create random array of objects (with date)
   let data = [];
-  let baseTime = new Date('2018-05-01T00:00:00').getTime();
+  let baseTime = new Date('2020-01-01T00:00:00').getTime();
   let dayMs = 24 * 60 * 60 * 1000;
   for(var i = 0; i < numItems; i++) {
     data.push({

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Bar, Line, Pie } from 'react-chartjs-2';
-
+import { Bar, Line, Pie, Doughnut } from 'react-chartjs-2';
+// import '../components/chart.css'
 
 class Chart extends Component {
     constructor(props) {
@@ -36,23 +36,34 @@ class Chart extends Component {
     }
     render() {
         return (
-            <div className="chart">
-                <h1>Graph with react-chartjs-2</h1>
-                <Bar
-                    data={this.state.chartData}
-                    options={{}}
-                />
-                <Line
-                    data={this.state.chartData}
-                    options={{}}
-                />
-                <Pie
-                    data={this.state.chartData}
-                    options={{}}
-                />
-
-
+            <div className="Dashboard">
+            <h1>Graph with react-chartjs-2</h1>
+              <div className="main chartjs-2-wrapper">
+              <Bar
+              data={this.state.chartData}
+              options={{}}
+            />
+              </div>
+              <div className="main chartjs-2-wrapper">
+              <Line
+                data={this.state.chartData}
+                options={{}}
+              />
+              </div>
+              <div className="sub chartjs-2-wrapper">
+              <Pie
+                data={this.state.chartData}
+                options={{}}
+              />
+              </div>
+              <div className="sub chartjs-2-wrapper">
+              <Doughnut
+                data={this.state.chartData}
+                options={{}}
+              />
+              </div>
             </div>
+
         )
     }
 }

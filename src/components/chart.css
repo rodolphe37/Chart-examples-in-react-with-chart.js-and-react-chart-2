@@ -1,0 +1,29 @@
+
+
+/* .chartjs-size-monitor {
+    width: 93%;
+} */
+
+
+.chartjs-2-wrapper {
+    padding: 2%;
+    display: inline-block;
+  }
+  
+  .main.chartjs-2-wrapper {
+    width: 96%;
+    height: 400px;
+  }
+  
+  .sub.chartjs-2-wrapper {
+    width: 29%;
+    height: 300px;
+  }
+  
+  /* Simple responsivenss example */
+  @media (max-width: 700px) {
+    .sub.chartjs-2-wrapper {
+      width: 96%;
+    }
+  }
+  
